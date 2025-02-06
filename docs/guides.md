@@ -111,7 +111,15 @@ Update JSON format:
 
 #### Shell scripts (`*.sh`)
 
-Please read the [Boot Scripts](#boot-scripts) section to understand the difference between `post-fs-data.sh` and `service.sh`. For most module developers, `service.sh` should be good enough if you just need to run a boot script. If you need to wait for boot completed, you can use `resetprop -w sys.boot_completed 0`.
+Please read the [Boot Scripts](#boot-scr
+![screenshot-nexus9-app-1](https://github.com/user-attachments/assets/70a27b78-104b-4700-85b1-6e3de36110aa)
+![screenshot-nexus9-app-1 (1)](https://github.com/user-attachments/assets/472120c8-b21c-44c6-9ce7-e9a52387a0a1)
+![screenshot-phone-small-ui-1](https://github.com/user-attachments/assets/91ad4f83-e8cf-4af8-ab89-a0780a9f805b)
+![screenshot-phone-small-ui-1 (1)](https://github.com/user-attachments/assets/866e6c02-5e0a-43eb-98e9-638cec549584)
+![Screenshot_2025-02-06-01-18-22-670_com chrome canary](https://github.com/user-attachments/assets/29a2d662-d495-4d9c-90e6-c05c5b9d588e)
+![Screenshot_2025-02-06-01-19-34-310_com chrome canary](https://github.com/user-attachments/assets/3f8295e0-8028-4474-b0d7-a0732f76d1f9)
+![Screenshot_2025-02-06-01-19-41-301_com chrome canary](https://github.com/user-attachments/assets/6ea527fa-5c5f-4f7a-85a2-116e13bae09f)
+ipts) section to understand the difference between `post-fs-data.sh` and `service.sh`. For most module developers, `service.sh` should be good enough if you just need to run a boot script. If you need to wait for boot completed, you can use `resetprop -w sys.boot_completed 0`.
 
 In all scripts of your module, please use `MODDIR=${0%/*}` to get your module's base directory path; do **NOT** hardcode your module path in scripts.
 If Zygisk is enabled, the environment variable `ZYGISK_ENABLED` will be set to `1`.
